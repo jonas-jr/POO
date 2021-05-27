@@ -1,20 +1,11 @@
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
     return "Index"
-
-if __name__ =="__main__":
-    app.run()
-
-#dia 27
-
-from flask import Flask, request
-
-app = Flask(__name__)
-
+    
 @app.route('/login',methods=['POST','GET])'])
 
 def login():
