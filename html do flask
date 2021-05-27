@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h1>Bem vindos à pagina de login</h1>    
+    <form action=http://127.0.0.1:5000/login>
+    <p><input type="text" name="Usuario"></p>
+    <p><input type="password" name="Senha"></p>
+    <p><input type="submit" value="Entrar"/></p>
+
+</form>
+</body>
+</html>
