@@ -8,3 +8,34 @@ def index():
 
 if __name__ =="__main__":
     app.run()
+
+#dia 27
+
+from flask import Flask, request
+
+app = Flask(__name__)
+
+@app.route('/login',methods=['POST','GET])'])
+
+def login():
+    if request.method=='POST':
+        user=request.form['userName']
+        password=request.form['senha']
+
+        if user == 'jonas' and password== '1234':
+            return 'Bem vindo %s'%user
+        else:
+            return 'login falhou'
+
+    else:
+        user=request.args.get['userName']
+        password=request.args.get['userpassword']
+        if user=='jonas' and password=='1234':
+            return 'Bem vindo %s'%user
+        
+        else:
+            return 'login falhou%s'%user
+    
+    
+if __name__=="__main__":
+    app.run(debug=True)
